@@ -33,8 +33,79 @@
     </script>
 </head>
 
-<body class="bg-white font-common">
-    these is blog page
+<body class="bg-white font-common w-10/12 mx-auto">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button onclick="location.href='./index.html'"
+                class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Go to Quiz Home
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <!-- difference between map filter forEach find  -->
+    <div>
+        <h2 class="text-xl font-medium pb-4 pt-4">Q1. What is difference between Map, Filter , Find and ForEach?</h2>
+        <p>Map, filter, find, and forEach are array methods that iterate over arrays. Give some details on its every
+            topics:
+        <ol>
+            <li class="pl-4 pb-2">1.Map: Map creates a new array by given array. It takes a function
+                as an argument and returns a new array with the same length as the original array, map are creating
+                element based on given array.
+            </li>
+            <li class="pl-4 pb-2">2.Filter: Filter creates a new array by filtering elements from the given array. It
+                takes a function as an argument and returns a new array of elements that are fulfill condition.
+            </li>
+            <li class="pl-4 pb-2">3.Find: Find returns the first element in the array that fulfill the condition.If
+                no elements fill the condition, it returns undefined.
+            </li>
+            <li class="pl-4 pb-2">4.ForEach: ForEach going over the elements in the array and performs a function on
+                each
+                element. forEach does not create a new array or return a value.
+            </li>
+        </ol>
+        </p>
+    </div>
+    <!-- difference between local storage and session storage  -->
+    <div>
+        <h2 class="text-xl font-medium pb-4">Q2. What is difference between Local Storage and Session Storage?</h2>
+        <p class=" pb-4">localStorage and sessionStorage are two browser storage that store data in the browser. The
+            main difference between them is the time of the stored data; data in localStorage are stored if tab or
+            browser closed or pc shutdown but data in sessionStorage is cleared when the browser is closed or the tab is
+            closed or px shutdown.
+        </p>
+    </div>
+    <!-- how to work event loop  -->
+    <div>
+        <h2 class="text-xl font-medium">Q3. What is event loop and how it's works?</h2>
+        <p class="py-3">Event loop is a javascript inner mechanism that how javascript works . when we write js code
+            then when call function and inner these function there are another function then inner function are executed
+            and then another line executed. <br> javascript are syncronus language that it execude code in one after one
+            but when use setTimeOut function then it works as a asyncronus system and pass it to the call stack and when
+            its are finsh then event fire and executed.</p>
+    </div>
+    <!-- how work quizTimer   -->
+    <div>
+        <h2 class="text-xl font-medium pb-4">Q4. How to works quizTimer() function in noChange.js file?</h2>
+        <p class="pb-3"> In the noChange.js file here a function name quizTimer(), into these function there are call
+            another timing function that called setInterval that means its called 1000ms again and again but there are
+            an another condition these called that if 3 second passed then close it. </p>
+    </div>
+    <!-- how to work chooseQuiz  -->
+    <div>
+        <h2 class="text-xl font-medium pb-4">Q5. How to work chooseQuiz() function in noChange.js file ?</h2>
+        <p class="pb-3"> In the noChange.js file there are function called chooseQuiz() , in these function firstly
+            check that that quiz are select before or not and then another code running and give condition based on quiz
+            are available or not if condition matched then one works and if condition are don't matched then push the
+            element in the array and display it.</p>
+    </div>
 </body>
 
 </html>
